@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rebeccapurple; /* Borde del círculo exterior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    background-color: transparent; /* Sin color de fondo */
+    animation: julian 0.3s ease-out infinite;
+}
+
+.circle-2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rebeccapurple; /* Borde del círculo exterior */
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Sin color de fondo */ 
+}
+
+@keyframes julian {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        scale: 1.5;
+    }
+}
